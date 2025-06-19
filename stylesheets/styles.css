@@ -1,4 +1,122 @@
-body {
-    background-color: black;
+@font-face {
+    font-family: Odin;
+    src: url("./../fonts/Norse-Bold.otf") format("opentype");
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #EEEEEE;
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    border-radius: 5px;
+    font-size: 20px;
+    height: 30px;
+    width: 250px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    color: #464545;
+    font-size: 14px;
+}
+
+.back-image {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bottom-text, .submit {
+    font-size: 18px;
+}
+
+.column {
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: white;
+    height: 30%;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    position: relative;
+    flex-basis: 35%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.logo-bar {
+    background-color: rgb(0,0,0,0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 22%;
+    left: 0;
+    height: 15%;
+    width: 100%;
+}
+
+.logo-image {
+    height: 80%;
+}
+
+.logo-text {
     color: white;
+    font-family: Odin;
+    font-size: 6em;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.submit {
+    background-color: #596D48;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 200px;
+}
+
+.top, .form-head {
+    font-size: 24px;
 }
